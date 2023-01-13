@@ -1,0 +1,48 @@
+﻿<Page x:Class="EncryptorDymok.WpfApplication.Views.Pages.EncryptorPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:EncryptorDymok.WpfApplication.Views.Pages"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      Width="auto"
+      Height="auto"
+      Title="EncryptorPage"
+      d:DataContext="{d:DesignInstance local:EncryptorPage, IsDesignTimeCreatable=False}"
+      d:Background="{DynamicResource ApplicationBackgroundBrush}"
+      Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+      mc:Ignorable="d">
+
+    <Grid Margin="56,0" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+        <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="auto">
+            <DockPanel VerticalAlignment="Center">
+                <TextBlock Text="Encrypt" FontSize="18"/>
+                <ui:ToggleSwitch Margin="10 0 10 0" Content="{Binding ViewModel.IsEncrypt, Mode=TwoWay}"/>
+                <TextBlock Text="Decrypt" FontSize="18"/>
+            </DockPanel>
+            <Label Content="Key:" Target="{Binding ElementName=KeyTextBox}" HorizontalAlignment="Left"/>
+            <ui:TextBox Text="{Binding Path= ViewModel.Key, Mode=TwoWay}" Name="KeyTextBox"/>
+            <Grid VerticalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <Label Content="Input:" Target="{Binding ElementName=InputTextBox}" />
+                    <ui:TextBox TextAlignment="Left" TextWrapping="Wrap" MinHeight="250" 
+                                Text="{Binding Path= ViewModel.Text, Mode=TwoWay}" 
+                                Name="InputTextBox" Width="auto"/>
+                </StackPanel>
+                <StackPanel Grid.Column="2">
+                    <Label Content="Result:" Target="{Binding ElementName=ResultTextBox}" />
+                    <ui:TextBox TextAlignment="Left" TextWrapping="Wrap" MinHeight="250" 
+                                Text="{Binding ViewModel.Result, Mode=TwoWay}" 
+                                Name="ResultTextBox" Width="auto" IsEnabled="False"/>
+                </StackPanel>
+            </Grid>
+            <ui:Button IsDefault="True" Command="{Binding ViewModel.EncryptCommand, Mode=TwoWay}"
+                       Content="Encrypt" HorizontalAlignment="Center" Margin="0 20 0 0"/>
+        </StackPanel>
+    </Grid>
+</Page>

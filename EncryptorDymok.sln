@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncryptorDymok.ConsoleApplication", "EncryptorDymok.ConsoleApplication\EncryptorDymok.ConsoleApplication.csproj", "{854759DB-B6E8-49B0-95B3-52EAADF29555}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{5AAE84A2-DBAC-4F96-A58F-C8EF8B2C4407}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C5594995-A2CC-4F8B-8132-5CA66BB1C1F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C079547B-8A8D-4994-B0FE-E963832A233A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{3BD2300C-DFB1-4B3A-A24B-F0F009BD7F6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncryptorDymok.Domain", "EncryptorDymok.Domain\EncryptorDymok.Domain.csproj", "{DCCEB5D4-2217-4560-B9EC-8BD944CB2EEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EncryptorService", "EncryptorService", "{7C5C5C06-66E0-4455-9260-016C0D39B88B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncryptorDymok.Persistence", "EncryptorDymok.Persistance\EncryptorDymok.Persistence.csproj", "{5B32D8D3-3217-45C8-B969-22473B4EEA4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptorDymok.WpfApplication", "EncryptorDymok.WpfApplication\EncryptorDymok.WpfApplication.csproj", "{2D1A0845-41E8-4521-8CCC-09AA50E825CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{854759DB-B6E8-49B0-95B3-52EAADF29555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854759DB-B6E8-49B0-95B3-52EAADF29555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854759DB-B6E8-49B0-95B3-52EAADF29555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854759DB-B6E8-49B0-95B3-52EAADF29555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCCEB5D4-2217-4560-B9EC-8BD944CB2EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCEB5D4-2217-4560-B9EC-8BD944CB2EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCEB5D4-2217-4560-B9EC-8BD944CB2EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCEB5D4-2217-4560-B9EC-8BD944CB2EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B32D8D3-3217-45C8-B969-22473B4EEA4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B32D8D3-3217-45C8-B969-22473B4EEA4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B32D8D3-3217-45C8-B969-22473B4EEA4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B32D8D3-3217-45C8-B969-22473B4EEA4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D1A0845-41E8-4521-8CCC-09AA50E825CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1A0845-41E8-4521-8CCC-09AA50E825CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1A0845-41E8-4521-8CCC-09AA50E825CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1A0845-41E8-4521-8CCC-09AA50E825CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{854759DB-B6E8-49B0-95B3-52EAADF29555} = {5AAE84A2-DBAC-4F96-A58F-C8EF8B2C4407}
+		{3BD2300C-DFB1-4B3A-A24B-F0F009BD7F6D} = {C079547B-8A8D-4994-B0FE-E963832A233A}
+		{DCCEB5D4-2217-4560-B9EC-8BD944CB2EEB} = {C5594995-A2CC-4F8B-8132-5CA66BB1C1F3}
+		{7C5C5C06-66E0-4455-9260-016C0D39B88B} = {3BD2300C-DFB1-4B3A-A24B-F0F009BD7F6D}
+		{5B32D8D3-3217-45C8-B969-22473B4EEA4E} = {C079547B-8A8D-4994-B0FE-E963832A233A}
+		{2D1A0845-41E8-4521-8CCC-09AA50E825CE} = {5AAE84A2-DBAC-4F96-A58F-C8EF8B2C4407}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D151FF9-FBBE-4023-99B1-2995D0C15ACC}
+	EndGlobalSection
+EndGlobal

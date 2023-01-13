@@ -1,0 +1,4 @@
+
+lcsharpsquid:S1118"OAdd a 'protected' constructor or the 'static' keyword to the class declaration.(£¥ÿ
+^csharpsquid:S1144"<Remove the unused private method 'EncryptStringToBytes_Aes'.(÷Ãá›úÿÿÿÿ
+`csharpsquid:S1144">Remove the unused private method 'DecryptStringFromBytes_Aes'.(õ„¿›ûÿÿÿÿ
