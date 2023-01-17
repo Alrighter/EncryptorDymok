@@ -38,6 +38,13 @@ public partial class MainWindowViewModel : ObservableObject
                 PageTag = "encryptor",
                 Icon = SymbolRegular.LockClosed24,
                 PageType = typeof(EncryptorPage)
+            },
+            new NavigationItem
+            {
+                Content = "Complex encryptor",
+                PageTag = "hard_encryptor",
+                Icon = SymbolRegular.LockMultiple24,
+                PageType = typeof(HardEncryptorPage)
             }
         };
 

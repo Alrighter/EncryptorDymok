@@ -1,4 +1,4 @@
-﻿namespace EncryptorDymok.Persistance.Services.Encryptor;
+﻿namespace EncryptorDymok.Persistence.Services.Encryptor;
 
 public interface IEncryptorService
 {

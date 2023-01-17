@@ -4,11 +4,11 @@ using Wpf.Ui.Common.Interfaces;
 namespace EncryptorDymok.WpfApplication.Views.Pages;
 
 /// <summary>
-///     Логика взаимодействия для EncryptorPage.xaml
+///     Логика взаимодействия для HardEncryptorPage.xaml
 /// </summary>
-public partial class EncryptorPage : INavigableView<EncryptorViewModel>
+public partial class HardEncryptorPage : INavigableView<EncryptorViewModel>
 {
-    public EncryptorPage(EncryptorViewModel viewModel)
+    public HardEncryptorPage(EncryptorViewModel viewModel)
     {
         ViewModel = viewModel;
 

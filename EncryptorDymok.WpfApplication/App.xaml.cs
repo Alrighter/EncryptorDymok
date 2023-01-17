@@ -52,6 +52,7 @@ public partial class App
 
             // Views and ViewModels
             services.AddScoped<EncryptorPage>();
+            services.AddScoped<HardEncryptorPage>();
             services.AddScoped<EncryptorViewModel>();
 
             services.AddScoped<SettingsPage>();

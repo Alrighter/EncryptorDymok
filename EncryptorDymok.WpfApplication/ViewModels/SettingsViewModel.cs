@@ -27,7 +27,7 @@ public partial class SettingsViewModel : ObservableObject, INavigationAware
     private void InitializeViewModel()
     {
         CurrentTheme = Theme.GetAppTheme();
-        AppVersion = $"EncryptorDymok.WpfApplication - {GetAssemblyVersion()}";
+        AppVersion = $"EncryptorDymok - {GetAssemblyVersion()}";
 
         _isInitialized = true;
     }

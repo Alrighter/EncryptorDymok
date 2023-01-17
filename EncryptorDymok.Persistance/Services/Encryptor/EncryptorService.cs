@@ -1,7 +1,6 @@
 ﻿using System.Security.Cryptography;
-using System.Text;
 
-namespace EncryptorDymok.Persistance.Services.Encryptor;
+namespace EncryptorDymok.Persistence.Services.Encryptor;
 
 public class EncryptorService
 {
